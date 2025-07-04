@@ -1,7 +1,7 @@
   ## [Inverts a matrix and saves the results. Then shows the inverted matrix]
   
 
-## first inverts a matrix and then solves the results
+## creates a matrix that can cache its inverse
   makeCacheMatrix <- function(x = matrix()) {
     m = NULL
     set <- function(y){
@@ -18,7 +18,7 @@
     
   }
   
-  ## Shows the inverted matrix. Either by taking it from cache or inverting it.
+  ## Inverting the matrix, either by taking it from cache or inverting it.Then shows the results.
   
     cacheSolve <- function(x, ...) {
       m <- x$getinverse()
